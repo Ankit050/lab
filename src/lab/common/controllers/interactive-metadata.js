@@ -610,6 +610,10 @@ define(function() {
         // "onLoad" scripts (and set({ }) call inside), "modelOptions", etc.
         conflictsWith: ["property"]
       },
+      
+      orientation:{
+      defaultValue: "horizontal"
+      },
       disabled: {
         defaultValue: false
       },
