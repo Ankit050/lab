@@ -31,8 +31,7 @@ define(function(){
       
   var metadata          = require('common/controllers/interactive-metadata'),
       validator         = require('common/validator'),
-      helpIconSupport   = require('common/controllers/help-icon-support'),
-      // NumericOutputView = require('common/views/numeric-output-view');
+      helpIconSupport   = require('common/controllers/help-icon-support');
 
       return function Spinner(component, interactivesController){
       var controller,model,scriptingAPI;
@@ -61,7 +60,7 @@ define(function(){
     }
       
 function initialize() {
-      var $option, $fakeCheckable, $label,
+      var $option, $label,
           option, i, len;
 
       // Create HTML elements.
@@ -70,8 +69,7 @@ function initialize() {
       // Each interactive component has to have class "component".
       $div.addClass("component");
       // Add class defining component orientation - "horizontal" or "vertical".
-      $div.addClass(component.orientation);
-
+      
       if (component.label) {
         $label = $("<span>").text(component.label);
         $label.addClass("label");
