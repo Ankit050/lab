@@ -489,6 +489,47 @@ define(function() {
         defaultValue: false
       }
     },
+    
+    spinner: {
+      id:{
+        required: true
+      },
+      type:{
+        required: true
+      },
+      min: {
+        required: true
+      },
+      max: {
+        required: true
+      },
+      step: {
+        required: true
+      },
+      title: {
+        defaultValue: ""
+      },
+      width: {
+        defaultValue: "auto"
+      },
+      height: {
+        defaultValue: "auto"
+      },
+      displayValue: {},
+      property: {
+        conflictsWith: ["initialValue", "action"]
+      },
+      retainProperty: {
+        defaultValue: true
+      },
+      action: {
+        conflictsWith: ["property"]
+      },
+      initialValue: {
+        conflictsWith: ["property"]
+      }
+      
+    },
 
     checkbox: {
       id: {
