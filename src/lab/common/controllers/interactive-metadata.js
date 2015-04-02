@@ -515,6 +515,9 @@ define(function() {
       height: {
         defaultValue: "auto"
       },
+      label: {
+        defaultValue: ""
+      },
       displayValue: {},
       property: {
         conflictsWith: ["initialValue", "action"]
